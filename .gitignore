@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.vercel/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Large raw media: host externally and use a URL in videos.js
+assets/videos/*.mov
+assets/videos/*.mkv
