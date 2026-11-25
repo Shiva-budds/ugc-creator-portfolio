@@ -30,8 +30,15 @@ const works = [
     const widest = Math.max(...[...name.children].map(s => s.scrollWidth));
     if (widest > room) name.style.fontSize = (parseFloat(getComputedStyle(name).fontSize) * room / widest * 0.97) + "px";
   };
-  fitName(); addEventListener("resize", fitName);
-  if (document.fonts) document.fonts.ready.then(fitName);
+  // where the middle photo starts, measured inside each name line (100% when the photo is hidden, e.g. on phones)
+  const photo = $(".hero-img-a");
+  const setCut = () => {
+    const shown = getComputedStyle(photo).display !== "none";
+    [...name.children].forEach(s => s.style.setProperty("--cut", shown ? (photo.getBoundingClientRect().left - s.getBoundingClientRect().left) + "px" : "100%"));
+  };
+  const layoutName = () => { fitName(); setCut(); };
+  layoutName(); addEventListener("resize", layoutName);
+  if (document.fonts) document.fonts.ready.then(layoutName);
 
   // nav: appears after leaving the hero
   const nav = $("#nav"), toggle = $("#navToggle"), links = $("#navLinks"), hero = $("#home");
