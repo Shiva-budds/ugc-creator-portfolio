@@ -22,6 +22,17 @@ const works = [
       <figcaption><span class="cat">${w.category}</span><span class="ttl">${w.title}</span><span class="brd">${w.brand}</span></figcaption>
     </figure>`).join("");
 
+  // hero name: shrink the font until the longest line fits, whatever the name or font
+  const name = $(".hero-name"), copy = $(".hero-copy");
+  const fitName = () => {
+    name.style.fontSize = "";
+    const room = copy.clientWidth - parseFloat(getComputedStyle(copy).paddingLeft) * 2;
+    const widest = Math.max(...[...name.children].map(s => s.scrollWidth));
+    if (widest > room) name.style.fontSize = (parseFloat(getComputedStyle(name).fontSize) * room / widest * 0.97) + "px";
+  };
+  fitName(); addEventListener("resize", fitName);
+  if (document.fonts) document.fonts.ready.then(fitName);
+
   // nav: appears after leaving the hero
   const nav = $("#nav"), toggle = $("#navToggle"), links = $("#navLinks"), hero = $("#home");
   const onScroll = () => {
