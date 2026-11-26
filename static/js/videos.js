@@ -5,11 +5,7 @@ const videos = [
   { title: "Jewellery Advertisement", category: "Jewellery", thumbnail: "assets/thumbnails/jewellery.svg", video: "assets/videos/jewellery.mp4", brand: "Brand Placeholder" },
   { title: "Skincare Product Video", category: "Beauty", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/skincare.mp4", brand: "Brand Placeholder" },
   { title: "Fashion Lookbook", category: "Fashion", thumbnail: "assets/thumbnails/fashion.svg", video: "assets/videos/fashion.mp4", brand: "Brand Placeholder" },
-  { title: "Watch Close-Up", category: "Watches", thumbnail: "assets/thumbnails/watch.svg", video: "assets/videos/watch.mp4", brand: "Brand Placeholder" },
-  { title: "Training Gear Review", category: "Fitness", thumbnail: "assets/thumbnails/fitness.svg", video: "assets/videos/fitness.mp4", brand: "Brand Placeholder" },
-  { title: "Gadget Unboxing", category: "Technology", thumbnail: "assets/thumbnails/tech.svg", video: "assets/videos/tech.mp4", brand: "Brand Placeholder" },
-  { title: "Riding Gear Story", category: "Automotive", thumbnail: "assets/thumbnails/auto.svg", video: "assets/videos/auto.mp4", brand: "Brand Placeholder" },
-  { title: "Daily Carry Lifestyle", category: "Lifestyle", thumbnail: "assets/thumbnails/lifestyle.svg", video: "assets/videos/lifestyle.mp4", brand: "Brand Placeholder" }
+  { title: "Watch Close-Up", category: "Watches", thumbnail: "assets/thumbnails/watch.svg", video: "assets/videos/watch.mp4", brand: "Brand Placeholder" }
 ];
 
 (function () {
