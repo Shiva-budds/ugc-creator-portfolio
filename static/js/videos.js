@@ -2,10 +2,10 @@
    video: local MP4 path OR a full https:// URL (e.g. hosted on Cloudinary/Bunny/R2)
    Replace placeholder thumbnails (.svg) with your own .jpg files. */
 const videos = [
-  { title: "Jewellery Advertisement", category: "Jewellery", thumbnail: "assets/thumbnails/jewellery.svg", video: "assets/videos/jewellery.mp4", brand: "Brand Placeholder" },
+  { title: "Perfume Product Video", category: "Cosmetic", thumbnail: "assets/thumbnails/jewellery.svg", video: "assets/videos/perfume-ad.mp4", brand: "Brand Placeholder" },
   { title: "Skincare Product Video", category: "Beauty", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/skincare.mp4", brand: "Brand Placeholder" },
   { title: "Fashion Lookbook", category: "Fashion", thumbnail: "assets/thumbnails/fashion.svg", video: "assets/videos/fashion.mp4", brand: "Brand Placeholder" },
-  { title: "Watch Close-Up", category: "Watches", thumbnail: "assets/thumbnails/watch.svg", video: "assets/videos/watch.mp4", brand: "Brand Placeholder" }
+  { title: "Headphone Product Video", category: "Headphone", thumbnail: "assets/thumbnails/watch.svg", video: "assets/videos/headphone-ad.mp4", brand: "Brand Placeholder" }
 ];
 
 (function () {
