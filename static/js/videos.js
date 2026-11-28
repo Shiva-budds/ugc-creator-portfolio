@@ -2,10 +2,10 @@
    video: local MP4 path OR a full https:// URL (e.g. hosted on Cloudinary/Bunny/R2)
    Replace placeholder thumbnails (.svg) with your own .jpg files. */
 const videos = [
-  { title: "Perfume Product Video", category: "Cosmetic", thumbnail: "assets/thumbnails/jewellery.svg", video: "assets/videos/perfume-ad.mp4", brand: "Brand Placeholder" },
-  { title: "Skincare Product Video", category: "Beauty", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/skincare.mp4", brand: "Brand Placeholder" },
-  { title: "Fashion Lookbook", category: "Fashion", thumbnail: "assets/thumbnails/fashion.svg", video: "assets/videos/fashion.mp4", brand: "Brand Placeholder" },
-  { title: "Headphone Product Video", category: "Headphone", thumbnail: "assets/thumbnails/watch.svg", video: "assets/videos/headphone-ad.mp4", brand: "Brand Placeholder" }
+  { title: "Exfoliating Cream Ad", category: "Skincare", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/Exfoliate-cream-ad.mp4", brand: "" },
+  { title: "Lip Repair Stick Ad", category: "Lip Care", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/lip-repair-stick-ad.mp4", brand: "" },
+  { title: "Men's Facewash Ad", category: "Men's Grooming", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/Mens-facewash-ad.mp4", brand: "" },
+  { title: "Sunscreen Ad", category: "Skincare", thumbnail: "assets/thumbnails/skincare.svg", video: "assets/videos/Sunscreen-ad.mp4", brand: "" }
 ];
 
 (function () {
@@ -17,7 +17,7 @@ const videos = [
   grid.innerHTML = videos.map((v, i) => `
     <button class="phone rv" style="--d:${(i % 4) * .08}s" data-i="${i}" aria-label="Play ${v.title}">
       <div class="phone-frame"><img loading="lazy" src="${v.thumbnail}" alt="${v.title} thumbnail"><i class="play"></i></div>
-      <div class="phone-meta"><b>${v.title}</b><span>${v.category} · ${v.brand}</span></div>
+      <div class="phone-meta"><b>${v.title}</b><span>${[v.category, v.brand].filter(Boolean).join(" · ")}</span></div>
     </button>`).join("");
 
   const sync = () => box.classList.toggle("paused", player.paused);
