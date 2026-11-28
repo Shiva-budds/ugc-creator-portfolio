@@ -2,10 +2,10 @@
    video: local MP4 path OR a full https:// URL (e.g. hosted on Cloudinary/Bunny/R2)
    Replace placeholder thumbnails (.svg) with your own .jpg files. */
 const videos = [
-  { title: "Exfoliating Cream Ad", category: "Skincare", thumbnail: "assets/thumbnails/exfoliating-cream-thumb.jpg", video: "assets/videos/Exfoliate-cream-ad.mp4", brand: "" },
-  { title: "Lip Repair Stick Ad", category: "Lip Care", thumbnail: "assets/thumbnails/lip-repairstick-thumb.jpg", video: "assets/videos/lip-repair-stick-ad.mp4", brand: "" },
-  { title: "Men's Facewash Ad", category: "Men's Grooming", thumbnail: "assets/thumbnails/mens-facewash-thumb.jpg", video: "assets/videos/Mens-facewash-ad.mp4", brand: "" },
-  { title: "Sunscreen Ad", category: "Skincare", thumbnail: "assets/thumbnails/sunscreen-thumb.jpg", video: "assets/videos/Sunscreen-ad.mp4", brand: "" }
+  { title: "Exfoliating Cream Ad", category: "Skincare", thumbnail: "assets/thumbnails/exfoliating-cream-thumb.jpeg", video: "assets/videos/Exfoliate-cream-ad.mp4", brand: "" },
+  { title: "Lip Repair Stick Ad", category: "Lip Care", thumbnail: "assets/thumbnails/lip-repairstick-thumb.jpeg", video: "assets/videos/lip-repair-stick-ad.mp4", brand: "" },
+  { title: "Men's Facewash Ad", category: "Men's Grooming", thumbnail: "assets/thumbnails/mens-facewash-thumb.jpeg", video: "assets/videos/Mens-facewash-ad.mp4", brand: "" },
+  { title: "Sunscreen Ad", category: "Skincare", thumbnail: "assets/thumbnails/sunscreen-thumb.jpeg", video: "assets/videos/Sunscreen-ad.mp4", brand: "" }
 ];
 
 (function () {
